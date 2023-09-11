@@ -11,6 +11,7 @@ const cookieParser = require('cookie-parser');
 const credentials = require('./middleware/credentials');
 const mongoose = require('mongoose');
 
+
 const connectDb = require('./config/dbConn');
 const PORT = process.env.PORT || 3500;
 
@@ -48,6 +49,8 @@ app.use('/logout', require('./routes/logout'));
 
 app.use(verifyJWT);
 app.use('/employees', require('./routes/api/employees'));
+app.use('/profile', require('./routes/api/profile'));
+
 
 app.all('*', (req, res) => {
     res.status(404);
@@ -61,6 +64,7 @@ app.all('*', (req, res) => {
 });
 
 app.use(errorHandler);
+
 
 mongoose.connection.once('open',()=>{
   console.log("connected to mongo db");

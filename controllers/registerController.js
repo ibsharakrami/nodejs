@@ -1,4 +1,5 @@
 const User = require("../model/user");
+const Profile = require('../model/profile');
 
 const bcrypt = require("bcrypt");
 
@@ -19,6 +20,11 @@ const handleNewUser = async (req, res) => {
       username: user,
 
       password: hashedPwd,
+    });
+    await Profile.create({
+      userId: newUser._id, // Assign the user's ID to the profile
+      phoneNumber: "", // You can set default values for phone number and address
+      address: "",
     });
     console.log(result);
     res.status(201).json({ success: `New user ${user} created!` });
