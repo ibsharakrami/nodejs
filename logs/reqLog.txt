@@ -286,3 +286,7 @@
 20230928	23:46:11	dfcf978b-16c6-4587-9214-1d31306bf248	POST	undefined	/products
 20230928	23:48:22	063c7af1-7f20-4a34-9ae6-bdca0ab37a51	POST	undefined	/products
 20230928	23:59:06	665de3c7-1732-482c-b2e9-056264176999	POST	undefined	/products
+20231012	15:41:27	267ea389-0229-4098-a51c-e9b82bbe2e4d	POST	undefined	/register
+20231012	15:41:53	53b2e9fb-25c2-49f2-bf3e-272721ff43df	POST	undefined	/auth
+20231012	15:43:18	b8cdd114-3fc2-4135-863f-24aac4cac6f4	POST	undefined	/register
+20231012	15:43:30	565d196e-c310-4f88-89ed-499bb14e3032	POST	undefined	/auth
